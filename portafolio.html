@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="titulo">Gabriel Sierra</h1>
+            <h2 id="subtitulo">Estudiante de Desarrollo Web</h2>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="acerca">
+                <h2>Acerca de mí</h2><br>
+                <p>Tengo 24 años y estoy iniciando en el mundo de la programación. Actualmente estoy cursando Jóvenes a
+                    Programar donde estoy aprendiendo a utilizar HTML, CSS y JavaScript. Además tengo un poco de
+                    conocimiento de Python.</p><br>
+                <div class="imagenes-logos">
+                    <img src="img/icon-html.png" alt="Icono de HTML5">
+                    <img src="img/icon-css.png" alt="Icono de CSS">
+                    <img src="img/icon-js.png" alt="Icono de JavaScript">
+                    <img src="img/icon-python.png" alt="Icono de Python">
+                </div>
+            </section>
+
+            <section id="trabajos">
+                <h2>Trabajos</h2><br>
+                <p>Estas son las tareas y trabajos realizados hasta el momento en la fase 2 del curso de JaP.</p><br>
+                <div class="trabajos-grid">
+                    <div class="trabajo-card">
+                        <h3>Semana 1</h3>
+                        <ul>
+                            <li><a href="#" onclick="alerta()">Tarea individual</a></li>
+                            <li><a href="#" onclick="alerta()">Tarea grupal</a></li>
+                        </ul>
+                    </div>
+                    <div class="trabajo-card">
+                        <h3>Semana 2</h3>
+                        <ul>
+                            <li><a href="#" onclick="alerta()">Tarea individual 1</a></li>
+                            <li><a href="#" onclick="alerta()">Tarea individual 2</a></li>
+                            <li><a href="#" onclick="alerta()">Tarea grupal</a></li>
+                        </ul>
+                    </div>
+                    <div class="trabajo-card">
+                        <h3>Semana 3</h3>
+                        <ul>
+                            <li><a href="#" onclick="alerta()">Tarea individual 1</a></li>
+                            <li><a href="#" onclick="alerta()">Tarea individual 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2><br>
+                <p>Enviame un mail: <a href="mailto:gabrielsierradonato@gmail.com">gabrielsierradonato@gmail.com</a></p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function alerta() {
+            alert("Estos links son ilustrativos")
+        }
+    </script>
+</body>
+
+</html>
