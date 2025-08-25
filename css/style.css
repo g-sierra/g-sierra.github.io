@@ -20,7 +20,7 @@ header {
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.9) 100%
     ),
-    url(img/fondo.jpg);
+    url(../img/fondo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
