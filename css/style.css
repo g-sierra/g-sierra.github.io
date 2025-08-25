@@ -6,7 +6,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   background-color: slategrey;
   min-height: 100vh;
 }
@@ -183,7 +183,6 @@ footer {
     margin-inline: 0;
     border-radius: 0;
     text-align: left;
-    line-height: 1.5;
   }
 
   .imagenes-logos img {
