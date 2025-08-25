@@ -6,6 +6,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
   background-color: slategrey;
   min-height: 100vh;
 }
@@ -13,7 +14,7 @@ body {
 /* Barra de navegacion */
 .navbar {
   padding: 1rem;
-  background: rgba(211, 211, 211, 0.6);
+  background: rgba(47, 79, 79, 0.8);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -27,7 +28,7 @@ body {
 }
 
 .navbar a {
-  color: darkslategrey;
+  color: antiquewhite;
   text-decoration: none;
   font-weight: bold;
   padding: 1em;
@@ -36,6 +37,7 @@ body {
 
 .navbar a:hover {
   background: rgba(211, 211, 211, 0.8);
+  background: rgb(38, 65, 65);
 }
 /* --------------------------------- */
 
@@ -44,7 +46,7 @@ body {
 }
 
 header {
-  min-height: 20rem;
+  min-height: 30rem;
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.9) 100%
@@ -113,8 +115,9 @@ header {
 }
 
 .trabajos-grid {
+  max-width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   gap: 1rem;
 }
 
@@ -125,6 +128,7 @@ header {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.1s ease;
+  text-align: center;
 }
 
 .trabajo-card:hover {
@@ -133,7 +137,6 @@ header {
 
 .trabajo-card h3 {
   color: darkslategray;
-  text-align: center;
 }
 
 .trabajo-card ul {
@@ -153,4 +156,34 @@ header {
 #contacto p {
   color: darkslategrey;
   font-weight: 400;
+}
+
+.footer {
+  font-size: 0.9rem;
+  background: rgb(47, 79, 79, 0.8);
+  color: rgb(250, 235, 215, 0.8);
+  margin-top: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    min-height: 20rem;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .section-box {
+    margin-inline: 0;
+    border-radius: 0;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .imagenes-logos img {
+    width: 5rem;
+    padding: 0.75rem;
+  }
 }
